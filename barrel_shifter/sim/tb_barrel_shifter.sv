@@ -35,11 +35,12 @@ module tb_barrel_shifter ();
     data_in = 0;
 
     #10;
-    for(int i = 0; i<8; i++)
-      begin
-        data_in   = $urandom;
-        shift_mag = i;
-      end
+
+    // Testing all possible input patterns
+    for(int i = 0; i<8; i++) begin
+      data_in   = $urandom;
+      shift_mag = i;
+    end
   end
 
 endmodule

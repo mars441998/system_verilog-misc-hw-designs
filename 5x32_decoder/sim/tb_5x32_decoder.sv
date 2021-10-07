@@ -26,12 +26,13 @@ module tb_decoder5to32 ();
 
   initial begin
     Data_in = 5'b00000;
+    
     #10
-      for (int i=0; i<(2**5); i=i+1)
-        begin
-          Data_in = i;
-          #10;
-        end
+    
+    for (int i=0; i<(2**5); i=i+1) begin
+      Data_in = i;
+      #10;
+    end
   end
 
 endmodule : tb_decoder5to32
