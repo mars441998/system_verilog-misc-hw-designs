@@ -15,4 +15,4 @@ OR use systemverilog XOR reduction operator on the whole register.
 
   assign parity_out = ^|data_in;
 
-In the RTL, I have used single-line XOR reduction operator as it is easy to understand and pretty straighf-forward.
+In the RTL, I have used single-line XOR reduction operator as it is easy to understand and pretty straight-forward.
